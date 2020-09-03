@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+
 }
 
 h1 {
@@ -10,27 +11,34 @@ h1 {
 }
 
 h2 {
-  font-family: 'Monserat';
+  font-family: 'Montserrat';
   font-weight: bold;
   font-size: 3rem;
   line-height: 1.5;
 }
 
 h3 {
-  color: #000;
+
   font-size: 1.5rem;
-  font-family: 'Monserat';
+  font-family: 'Montserrat';
   font-weight: bold;
+}
+
+p {
+
+  color: #8f8f8f;
+
 }
 
 /* SECTIOIN TITLE */
 #title {
   background-color: #ff4c68;
   color: white;
+
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Nav Bar */
@@ -65,13 +73,18 @@ h3 {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
 }
 
 /* SECTION FEATURES */
 #features {
   text-align: center;
-  color: #8f8f8f;
+
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -131,4 +144,59 @@ h3 {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+
+
+/* CALL TO ACTION SECTION */
+
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  color: #fff;
+
+
+}
+
+#cta h3 {
+
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+
+/* FOOTER SECTION */
+
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+  background-color: #fff;
+}
+
+#footer i {
+  margin: 1rem 1rem 2rem;
+}
+
+
+
+
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1080px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
